@@ -9,15 +9,16 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Sagar's Lab`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Sagar`,
+      summary: `Curious mind exploring the intersection of Physics, electronics, Information  and everyday life.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Into the practical applications and insights of electronics and technology across various fields.`,
+    siteUrl: `https://sagarlab.netlify.app`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `solo474`,
+      linkedin: "",
     },
   },
   plugins: [
@@ -40,6 +41,12 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`,
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
